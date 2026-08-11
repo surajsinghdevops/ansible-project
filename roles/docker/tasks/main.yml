@@ -1,0 +1,13 @@
+
+# tasks file for roles/docker
+---
+- name: Install Docker
+  ansible.builtin.dnf:
+    name: docker
+    state: present
+
+- name: Start Docker service
+  ansible.builtin.service:
+    name: docker
+    state: started
+    enabled: true

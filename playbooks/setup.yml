@@ -1,0 +1,9 @@
+---
+- name: Configure application servers
+  hosts: web
+  become: true
+
+  roles:
+    - docker
+    - nginx
+    - application

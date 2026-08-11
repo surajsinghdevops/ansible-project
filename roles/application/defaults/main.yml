@@ -1,0 +1,6 @@
+---
+docker_image: "nginx"
+docker_tag: "latest"
+container_name: "myapp"
+container_port: 8080
+host_port: 8080
